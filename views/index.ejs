@@ -1,4 +1,35 @@
-<h1>Pagina inicio</h1>
-<br>
-<h2>Ir para pagina de pergunta: </h2> <br>
-<a href="/perguntar">Clique aqui</a>    
+<%- include ("partials/head.ejs") %> 
+ <body>
+    <%- include ("partials/navbar.ejs") %> 
+
+    <div class="container">
+        <h1>Perguntar</h1>
+        <a href="perguntar" class="btn btn-primary">
+            Perguntar
+        </a>
+
+        <hr>
+
+        <% perguntas.forEach(pergunta => { %>
+            <div class="card">
+                <div class="card-body">
+                    <h3>
+                        <%= pergunta.titulo  %>
+                    </h3>
+                </div>
+                <div class="card-footer">      
+                    <a href="/pergunta/<%= pergunta.id %>">
+                        <button class="btn btn-primary">
+                            Responder
+                        </button>
+                    </a>  
+                </div>
+            </div>
+            <hr>
+        <% }) %>
+    </div>
+
+
+ </body>
+
+ <%- include ("partials/footer.ejs") %> 
