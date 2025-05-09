@@ -51,18 +51,6 @@ Este projeto é um sistema completo onde os usuários podem:
 
 ✅ Projeto **concluído**
 
-## 🖼️ Telas do Projeto
-
-### Página Inicial
-![Main Page](MainPage.png)
-
-### Página de Perguntas
-![Question Page](QuestionPage.png)
-
-### Página de Respostas
-![Answer Page](AnswerPage.png)
-
-
 ## 👨‍💻 Autor
 
 Feito por [Lucas](https://github.com/purpesy)
